@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1.0"/>
+	<!-- -->
+	<script>!function(){
+	var a,b,c;
+	a = {
+		a: "position:absolute;right:0;top:0;max-width:100%;",
+		b: "border-radius:4px;padding:0.01em 16px;margin-top:16px;margin-bottom:16px;color:#fff!important;background-color:#f44336!important;white-space:pre;text-wrap:wrap;overflow:auto",
+		c: document.createElement('div'),
+		d: document.createElement('p'),
+		onerror: 
+		function onerror(i,v,e,n,t) {
+			b = a.d.cloneNode()
+			if(!!t)
+				b.appendChild(document.createTextNode(i)),
+					b.appendChild(document.createElement('br')),
+				b.appendChild(document.createTextNode(' ('+':'+e+':'+n+')'));
+			else
+				for(c in arguments)
+					b.appendChild(document.createTextNode(arguments[c])),
+					b.appendChild(document.createElement('br'))
+			b.addEventListener('click',a.onclick)
+			a.c.appendChild(b)
+		},
+		onclick:
+		function onclick() {
+			// a.c.removeChild(this)
+			a.c.innerText = ''
+		}
+	}
+	a.c.style.cssText = a.a
+	a.d.style.cssText = a.b
+	onerror = a.onerror
+	document.documentElement.appendChild(a.c)
+}()</script>
+	<!-- -->
+	<title>PHP5 - WebServer configuration simulation on Linux</title>
+	<style>
+	@font-face {
+		font-family: DejaVuSansMono;
+		src: url(DejaVuSansMono.ttf);
+	}
+	</style>
+	<style>
+	body,html {
+		height: 100%;
+		height: 100vh;
+		margin: 0!important;
+		background-color: #414141;
+	}
+	.layar-cinema {
+		font-family: FiraCode, DejaVuSansMono, monospace;
+		font-size: 9.5pt;
+		color: #adaaad;
+		background-color: #121212;
+		width: 100%;
+		height:100%;
+		white-space: pre;
+		overflow: auto;
+		
+		
+	}
+	.line {
+		margin: 0!important;
+	}
+	.line:before,.line::before,
+	.pointer:before,.pointer::before {
+		content: " ";
+		margin-left: -1ch;
+	}
+	.pointer:before,.pointer::before {
+		border-bottom: 1px solid #adaaad;
+		-webkit-animation:fading 1s infinite;
+		-moz-animation:fading 1s infinite;
+		-o-animation:fading 1s infinite;
+		animation:fading 1s infinite;
+	}
+	
+	@-webkit-keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+	@-moz-keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+	@-o-keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+	@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+	
+	.blue,.input {background-color: #0000ad;color: #adaaad;}
+	.gray {background-color: #adaaad;color: #000;}
+	.black {background-color: #000;color: #adaaad;}
+	.button.active,.switch.active {background-color: #ad0000;color: #adaaad;}
+	.title{color: #ad0000;}
+	</style>
+</head>
+<body>
+	<div class="layar-cinema"></div>
+	<script src="js/rule.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
